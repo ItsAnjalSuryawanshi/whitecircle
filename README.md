@@ -1,6 +1,11 @@
 # whitecircle
 WHITECIRCLE GROUP — TAX & COMPLIANCE
 Documentation of Website
+Tech Stack
+- Next.js
+- Tailwind CSS
+- Node.js
+- MongoDB
 1. HOME PAGE FEATURES (Combined From All Websites)
 Your home page will represent trust, professionalism, compliance, and automation. Below
 is the complete list of features that will be displayed on the Home Page:
