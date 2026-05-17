@@ -1,0 +1,135 @@
+{
+    "theme_archetype": {
+      "theme": "light",
+      "archetype": "1 & 5 Hybrid (Old Money Tech)",
+      "description": "Combining trust and stability (Archetype 1) with the premium depth of Jewel & Luxury (Archetype 5 - Deep Blues). The design communicates absolute authority, security, and premium service to the Indian market. It uses deep blues, clean paper-white backgrounds, and serif accents."
+    },
+    "typography": {
+      "strategy": "Old Money Tech",
+      "fonts": {
+        "heading": "Cormorant Garamond",
+        "body": "Satoshi",
+        "monospace": "IBM Plex Mono"
+      },
+      "scale": {
+        "h1": "text-5xl sm:text-6xl tracking-tight leading-tight",
+        "h2": "text-3xl sm:text-4xl tracking-tight leading-snug",
+        "h3": "text-2xl sm:text-3xl leading-snug",
+        "h4": "text-lg sm:text-xl font-semibold",
+        "body": "text-base leading-relaxed",
+        "label": "text-xs tracking-[0.2em] uppercase font-bold"
+      },
+      "rules": [
+        "Headings must use font-medium or font-semibold; DO NOT use generic sans (Inter/Roboto) for headings.",
+        "Labels, badges, and overlines must be Uppercase + Tiny + Wide Spacing.",
+        "Use IBM Plex Mono for all financial figures, tax amounts, compliance scores, and tabular data."
+      ]
+    },
+    "colors": {
+      "background": {
+        "primary": "#FDFDFC",
+        "secondary": "#F5F2EA",
+        "dark_surface": "#050E20"
+      },
+      "brand": {
+        "primary": "#0B2046",
+        "primary_hover": "#14346B",
+        "accent": "#D4AF37",
+        "accent_hover": "#C5A028"
+      },
+      "text": {
+        "primary": "#050E20",
+        "secondary": "#4A5568",
+        "on_dark": "#FFFFFF",
+        "on_primary": "#FFFFFF"
+      },
+      "semantic": {
+        "success": "#1B4D3E",
+        "warning": "#B7791F",
+        "error": "#9B2C2C",
+        "border": "#E2E8F0"
+      },
+      "rules": [
+        "Never use pure black or grey. All darks are tinted with deep blue (#050E20).",
+        "Gradients are forbidden unless for a subtle hero background shimmer.",
+        "Hover states must be explicitly defined and accessible.",
+        "Use the accent color (gold) sparingly for primary CTAs or high-value badges (like 'ISO Certified')."
+      ]
+    },
+    "layout_spacing": {
+      "marketing": {
+        "grid": "Bento Grid and Swiss Grid with asymmetry. grid-cols-1 md:grid-cols-12",
+        "spacing": "Generous spacing. py-24 for main sections, gap-12 between elements."
+      },
+      "dashboard": {
+        "grid": "Control Room Grid. Strict, dense layout. grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6.",
+        "spacing": "Efficient spacing. p-6 for widgets."
+      },
+      "rules": [
+        "Containers with borders must have internal padding (p-6 or p-8).",
+        "Hero sections should overlay text on images with maximum bg-black/40 or use a structured 2-column layout.",
+        "Dashboard cards should have 1px solid subtle border and no drop shadow by default, sharp edges (rounded-sm or rounded-none)."
+      ]
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-[#0B2046] text-white hover:bg-[#14346B] rounded-sm transition-colors px-6 py-3 font-medium",
+        "secondary": "border border-[#0B2046] text-[#0B2046] hover:bg-[#F5F2EA] rounded-sm transition-colors px-6 py-3 font-medium",
+        "accent": "bg-[#D4AF37] text-[#050E20] hover:bg-[#C5A028] rounded-sm transition-colors px-6 py-3 font-bold"
+      },
+      "surfaces": {
+        "marketing_header": "Crystal Glass: backdrop-blur-xl bg-[#FDFDFC]/80 border-b border-[#0B2046]/10 shadow-sm",
+        "dashboard_card": "bg-white border border-[#E2E8F0] rounded-sm. Hover: -translate-y-1 shadow-sm transition-all duration-200"
+      },
+      "rules": [
+        "Always use pure HTML + Tailwind CSS for marketing layouts (bento grids, overlapping).",
+        "Use Shadcn UI customized heavily for Dashboards. Avoid default Vercel-look.",
+        "Use lucide-react for icons.",
+        "Add data-testid attributes to all interactive elements."
+      ]
+    },
+    "motion_interactions": {
+      "rules": [
+        "Use framer-motion for page transitions, specifically for the Smart Dashboard Preview and Key Features badges.",
+        "Hover states must include transform and color changes (e.g., transition-all duration-300).",
+        "Use micro-interactions on dashboard widgets (subtle lift on hover)."
+      ]
+    },
+    "image_urls": {
+      "hero_background": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/471469cd-b32c-4713-bbb0-f6f19c2b2a56/images/5862e7db273a2f5be62de5699cfe772d2f9332a046fd33ca7d77a29827722ec8.png",
+        "description": "Abstract clean geometric background, deep midnight blue, subtle light leaks, frosted glass texture. Good for Auth pages or deep blue sections."
+      },
+      "hero_architecture": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/471469cd-b32c-4713-bbb0-f6f19c2b2a56/images/8b5f70ceb3858c12cddf8f278c6d5fb3b782c607a781e5e24e01c6de55243c5e.png",
+        "description": "Wide-angle photograph of a modern glass corporate office building at golden hour. Best for main Hero section."
+      },
+      "tax_document_premium": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/471469cd-b32c-4713-bbb0-f6f19c2b2a56/images/dcbf9a95441dfbaf009bbd83ee5778a9b85ba68d3350237942ee3bc71617c211.png",
+        "description": "High-end tax document close-up with a premium gold and black pen resting on it. Good for Services Grid or Document Upload sections."
+      },
+      "professional_team": {
+        "url": "https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHRlYW0lMjBvZmZpY2V8ZW58MHx8fHwxNzc4OTI5MTY5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Professional business team meeting. Use for About Us, Why Choose Us, or Testimonials."
+      },
+      "document_signing": {
+        "url": "https://images.unsplash.com/photo-1562564055-71e051d33c19?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjBkb2N1bWVudCUyMHNpZ25pbmd8ZW58MHx8fHwxNzc4OTI5MTY5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Woman signing financial document. Good for CTA blocks or KYC sections."
+      }
+    },
+    "instructions_to_main_agent": [
+      "Strictly follow the Old Money Tech aesthetic: Cormorant Garamond for headings, Satoshi for body, Deep Blue (#0B2046) primary.",
+      "Do NOT use generic templates. Build a rich marketing page with overlapping sections and a highly functional, dense Dashboard.",
+      "For the Marketing Page: Include Hero (use hero_architecture image), Services grid (GST/ITR/TDS), Smart Dashboard Preview (mocked with framer-motion), Career section, Key Features badges, Pricing comparison, Why Choose Us, Testimonials carousel, FAQ, Footer.",
+      "For the Dashboards: Build out Client, Admin, and Accountant views using Shadcn customized to look sharp and dense (no large rounded corners or massive shadows). Include sidebars and topbars.",
+      "Client Dashboard: Document upload system, Auto Reminders, Filing History, Invoice & Billing, Profile/KYC, Chat support, Compliance score meter.",
+      "Admin Dashboard: Client management, Filing workflow, Analytics.",
+      "Accountant Dashboard: Assigned tasks, Process filings, Upload proofs.",
+      "Use Lucide React for icons.",
+      "Do not use placeholder image services. Use ONLY the provided image_urls.",
+      "Every button, input, and key link MUST have a data-testid attribute for testing.",
+      "Ensure all text has adequate contrast. Never use light grey text on white. Indian market trust signals (ISO Certified, CA Support, Secure Encryption) must be prominently displayed as badges."
+    ]
+  }
+  
+  
